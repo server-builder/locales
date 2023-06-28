@@ -45,14 +45,8 @@ const en_US = {
 				},
 			},
 			about: {
-				ping_test: "One sec...",
-				changelog_cta: "View Changelog",
-				credits: {
-					bot_developers: "Bot Developers",
-					//translators_header: "Translators (for English)",
-					translators_header: "Translators",
-				},
-			},
+				description: "Learn about Server Builder"
+			}
 		},
 		components: {
 			modals: {
@@ -63,23 +57,72 @@ const en_US = {
 					content_field_label: "Announcement Content",
 					content_field_placeholder_1: "Write your announcement...",
 					content_field_placeholder_2:
-						"We will ping @{0} automatically for you.",
+						"We will ping {0} automatically for you.",
 				},
 			},
+			select_menus: {
+				about: {
+					options: {
+						status: {
+							label: "Status",
+							description: "View the bot's current status"
+						},
+						server: {
+							label: "Server",
+							description: "View bot information related to your server."
+						},
+						credits: {
+							label: "Credits",
+							description: "View bot credits"
+						},
+					},
+
+				}
+			}
 		},
 		embeds: {
 			generic_error: {
 				title: "Something Went Wrong",
 			},
 			announcement_model: {
-				context:
-					"Here is an example of an announcement. Follow the instructions in the modal to make your own!",
 				title: "Announcement Title",
 				from_line: "From {0}",
 				description: "Your announcement will go here",
 			},
+			about: {
+				changelog_cta: "View Changelog",
+				credits: {
+					bot_developers: "Bot Developers",
+					//translators_header: "Translators (for English)",
+					founder: "Founder",
+					translators_header: "Translators",
+					emotional_support: "Emotional Support Cats",
+				},
+				interaction_expired_cta: "Run /about again to use this menu",
+				ping_header: "Ping (as of {0})",
+				shard_header: "Shard"
+			},
+			info: {
+				user: {
+					acc_created: "Created",
+					serv_join_date: "Joined This Server",
+					booster: "Booster",
+					top_role: "Highest Role"
+				}
+			}
 		},
-		messages: {},
+		messages: {
+			interactions: {
+				cannot_interact: "This interaction doesn't belong to you",
+				expired: "This interaction has expired"
+			},
+			about: {
+				ping_test: "One sec...",
+			},
+			announce: {
+				announcement_model_context: "Here is an example of an announcement. Follow the instructions in the modal to make your own!"
+			}
+		},
 		global: {
 			join_support_server_cta: "Join our Support Server",
 		},
