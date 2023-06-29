@@ -1,4 +1,6 @@
-const en_US = {
+import Translation from "../Translation";
+
+const en_US: Translation = {
 	name: "English (US)",
 	emoji: "🇺🇸",
 	authors: ["[rugs](https://rugs.dev/)", "[the0show](https://the0show.com/)"],
@@ -45,8 +47,8 @@ const en_US = {
 				},
 			},
 			about: {
-				description: "Learn about Server Builder"
-			}
+				description: "Learn about Server Builder",
+			},
 		},
 		components: {
 			modals: {
@@ -65,20 +67,19 @@ const en_US = {
 					options: {
 						status: {
 							label: "Status",
-							description: "View the bot's current status"
+							description: "View the bot's current status",
 						},
 						server: {
 							label: "Server",
-							description: "View bot information related to your server."
+							description: "View bot information related to your server.",
 						},
 						credits: {
 							label: "Credits",
-							description: "View bot credits"
+							description: "View bot credits",
 						},
 					},
-
-				}
-			}
+				},
+			},
 		},
 		embeds: {
 			generic_error: {
@@ -96,32 +97,35 @@ const en_US = {
 					//translators_header: "Translators (for English)",
 					founder: "Founder",
 					translators_header: "Translators",
+					translators_description:
+						"Thank you for making Server Builder accessible for everyone",
 					emotional_support: "Emotional Support Cats",
 				},
 				interaction_expired_cta: "Run /about again to use this menu",
 				ping_header: "Ping (as of {0})",
-				shard_header: "Shard"
+				shard_header: "Shard",
 			},
 			info: {
 				user: {
 					acc_created: "Created",
 					serv_join_date: "Joined This Server",
 					booster: "Booster",
-					top_role: "Highest Role"
-				}
-			}
+					top_role: "Highest Role",
+				},
+			},
 		},
 		messages: {
 			interactions: {
 				cannot_interact: "This interaction doesn't belong to you",
-				expired: "This interaction has expired"
+				expired: "This interaction has expired",
 			},
 			about: {
 				ping_test: "One sec...",
 			},
 			announce: {
-				announcement_model_context: "Here is an example of an announcement. Follow the instructions in the modal to make your own!"
-			}
+				announcement_model_context:
+					"Here is an example of an announcement. Follow the instructions in the modal to make your own!",
+			},
 		},
 		global: {
 			join_support_server_cta: "Join our Support Server",

@@ -33,19 +33,32 @@ keys: {
 
 However, we do ask you to be reasonable.
 
-## Base Translation
-
-The `i18n/en-US` translation defines the structure and every key that needs to be included, and their locations. This translation should only recieve re-wordings or re-organizing. Only Server Builder team members should add or remove keys from this file.
-
-All other translations should follow `en-US` as a guide.
-
 ## Creating a new translation
 
 When creating a new translation, first bring it up as an **Issue**. This includes both `i18n` and `custom` translations.
+If your translation is accepted create your translation file.
 
-Once approved, create the new translation by copying `base.ts` into the correct folder.
+### File Format
 
-Translations that are in Discord's Locale Reference should be placed into the `i18n` folder. All other translations go into `custom`.
+Please place your new translation in the folder assigned by one of the admins (we will tell you this before closing your issue).
+
+In your file, you'll need to `export default` a `const` with the `Translation` type. An example is provided below.
+
+```ts
+import Translation from "../Translation";
+
+// In an actual translation, "my_Locale" should be the 4 letter abbreviation of your locale.
+const my_Locale: Translation = {};
+
+export default my_Locale;
+```
+
+If done correctly, your code editor should alert you of missing properties.
+The `name`, `emoji`, `authors`, and `keys` properties are required. The keys are marked as optional.
+
+### Base Translation
+
+All translations are inhereted from the `Translation` interface, defined in `Translation.ts`. This file defines the format of every translation (even the `en_US` one).
 
 ## Attribution
 
