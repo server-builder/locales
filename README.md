@@ -2,7 +2,7 @@
 
 The localization files for Server Builder.
 
-[Contributing](https://github.com/server-builder/locales/blob/master/CONTRIBUTING.md) | [License](https://github.com/server-builder/locales/blob/master/LICENSE.md)
+[Contributing](https://github.com/server-builder/locales/blob/main/CONTRIBUTING.md) | [License](https://github.com/server-builder/locales/blob/main/LICENSE.md)
 
 <hr />
 
