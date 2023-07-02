@@ -1,6 +1,8 @@
 # Contributing
 
-** CUSTOM TRANSLATIONS ARE NOT SUPPORTED YET **
+> ### ⚠ Warning
+>
+> Custom Translations are not yet supported. They will be in a future release.
 
 ## Format
 
@@ -33,19 +35,23 @@ keys: {
 
 However, we do ask you to be reasonable.
 
-## Base Translation
-
-The `i18n/en-US` translation defines the structure and every key that needs to be included, and their locations. This translation should only recieve re-wordings or re-organizing. Only Server Builder team members should add or remove keys from this file.
-
-All other translations should follow `en-US` as a guide.
-
 ## Creating a new translation
 
 When creating a new translation, first bring it up as an **Issue**. This includes both `i18n` and `custom` translations.
 
-Once approved, create the new translation by copying `base.ts` into the correct folder.
+Once approved, create the new translation in the correct folder (we'll tell you which one to put it in :D)
 
-Translations that are in Discord's Locale Reference should be placed into the `i18n` folder. All other translations go into `custom`.
+The translation should export a `const` as `default` that inherits the `Translation` interface. An example is below.
+
+```ts
+import Translation from "../Translation";
+
+const my_Amazing_Translation: Translation = {
+	// your code editor of choice should alert you of missing attributes from Translation :D
+};
+
+export default my_Amazing_Translation;
+```
 
 ## Attribution
 
@@ -55,5 +61,9 @@ We want everyone who contributes to a translation to receive credit. However, we
 - Removing someone else's name and placing your own
 - Doing literally nothing and placing your name
 - Poor translation
+
+> ### ℹ Info
+>
+> Learn more by reading the [license](LICENSE.md).
 
 If you have any questions, please ask them in our [Support Server](https://discord.gg/bYpAbeVwEj).
