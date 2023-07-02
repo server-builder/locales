@@ -18,6 +18,11 @@ const es_ES: Translation = {
 				},
 			},
 		},
+		components: {
+			buttons: {
+				join_support_server_cta: "Unirse a la servidor de asistencia",
+			},
+		},
 		embeds: {
 			about: {
 				changelog_cta: "Ver listo de Cambios",
@@ -32,9 +37,18 @@ const es_ES: Translation = {
 			info: {
 				user: {
 					acc_created: "Creaba",
-					serv_join_date: "Unió a esta Servidor",
+					serv_join_date: "Unió a este Servidor",
 					booster: "Servidor Mejorado", // can someone review this translation? i'm not too sure how to get this concept across
 					top_role: "Rol mas Alta",
+				},
+			},
+			autorole: {
+				overview: {
+					header: "Configuración de AutoRole",
+					status: "AutoRole está",
+					default: "Predeterminado", // maybe immediate would work better here?
+					acc_age: "Requisito de edad de Cuenta",
+					must_contain: "Perfil nombre debe contener",
 				},
 			},
 		},
@@ -42,6 +56,11 @@ const es_ES: Translation = {
 			about: {
 				ping_test: "Un momento...",
 			},
+		},
+		global: {
+			enabled: "Habilitado",
+			disabled: "Inhabilitado",
+			yes: "Sí",
 		},
 	},
 };

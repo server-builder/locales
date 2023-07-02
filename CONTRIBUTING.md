@@ -1,6 +1,12 @@
+**[README](README.md)** | **[License](LICENSE.md)**
+
+<hr />
+
 # Contributing
 
-** CUSTOM TRANSLATIONS ARE NOT SUPPORTED YET **
+> ### ⚠ Warning
+>
+> Custom Translations are not yet supported. They will be in a future release.
 
 ## Format
 
@@ -38,27 +44,19 @@ However, we do ask you to be reasonable.
 When creating a new translation, first bring it up as an **Issue**. This includes both `i18n` and `custom` translations.
 If your translation is accepted create your translation file.
 
-### File Format
+Once approved, create the new translation in the correct folder (we'll tell you which one to put it in :D)
 
-Please place your new translation in the folder assigned by one of the admins (we will tell you this before closing your issue).
-
-In your file, you'll need to `export default` a `const` with the `Translation` type. An example is provided below.
+The translation should export a `const` as `default` that inherits the `Translation` interface. An example is below.
 
 ```ts
 import Translation from "../Translation";
 
-// In an actual translation, "my_Locale" should be the 4 letter abbreviation of your locale.
-const my_Locale: Translation = {};
+const my_Amazing_Translation: Translation = {
+	// your code editor of choice should alert you of missing attributes from Translation :D
+};
 
-export default my_Locale;
+export default my_Amazing_Translation;
 ```
-
-If done correctly, your code editor should alert you of missing properties.
-The `name`, `emoji`, `authors`, and `keys` properties are required. The keys are marked as optional.
-
-### Base Translation
-
-All translations are inhereted from the `Translation` interface, defined in `Translation.ts`. This file defines the format of every translation (even the `en_US` one).
 
 ## Attribution
 
@@ -68,5 +66,9 @@ We want everyone who contributes to a translation to receive credit. However, we
 - Removing someone else's name and placing your own
 - Doing literally nothing and placing your name
 - Poor translation
+
+> ### ℹ Info
+>
+> Learn more by reading the [license](LICENSE.md).
 
 If you have any questions, please ask them in our [Support Server](https://discord.gg/bYpAbeVwEj).

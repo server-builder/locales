@@ -104,6 +104,13 @@ export default interface Translation {
 					};
 				};
 			};
+			buttons?: {
+				/**
+				 * Appears on buttons prompting the user to join the Server Builder support server.
+				 * @fallback Join the Support Server
+				 */
+				join_support_server_cta?: string;
+			};
 		};
 		/**
 		 * Keys for text that appear in embeds.
@@ -138,6 +145,16 @@ export default interface Translation {
 					top_role?: string;
 				};
 			};
+			autorole?: {
+				overview?: {
+					header?: string;
+					status?: string;
+					roles_header?: string;
+					default?: string;
+					acc_age?: string;
+					must_contain?: string;
+				};
+			};
 		};
 		/**
 		 * Keys that appear in traditional message or interaction replies.
@@ -158,7 +175,15 @@ export default interface Translation {
 		 * Global keys that appear in a lot of places.
 		 */
 		global?: {
-			join_support_server_cta?: string;
+			enabled?: string;
+			disabled?: string;
+			on?: string;
+			off?: string;
+			yes?: string;
+			no?: string;
+			none?: string;
+			true?: string;
+			false?: string;
 		};
 	};
 }

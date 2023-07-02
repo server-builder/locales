@@ -80,6 +80,9 @@ const en_US: Translation = {
 					},
 				},
 			},
+			buttons: {
+				join_support_server_cta: "Join the Support Server",
+			},
 		},
 		embeds: {
 			generic_error: {
@@ -113,6 +116,16 @@ const en_US: Translation = {
 					top_role: "Highest Role",
 				},
 			},
+			autorole: {
+				overview: {
+					header: "AutoRole Settings",
+					status: "AutoRole is",
+					roles_header: "Roles",
+					default: "Default",
+					acc_age: "Account Age Requirement",
+					must_contain: "Display Name must contain",
+				},
+			},
 		},
 		messages: {
 			interactions: {
@@ -128,7 +141,15 @@ const en_US: Translation = {
 			},
 		},
 		global: {
-			join_support_server_cta: "Join our Support Server",
+			enabled: "Enabled",
+			disabled: "Disabled",
+			on: "On",
+			off: "Off",
+			yes: "Yes",
+			no: "No",
+			none: "None",
+			true: "True",
+			false: "False",
 		},
 	},
 };
