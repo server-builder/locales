@@ -1,3 +1,7 @@
+**[Contributing](CONTRIBUTING.md)** | **[README](README.md)**
+
+<hr />
+
 # Translation License
 
 - This is not a contract, rather a set of guidelines.

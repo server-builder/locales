@@ -1,3 +1,7 @@
+**[README](README.md)** | **[License](LICENSE.md)**
+
+<hr />
+
 # Contributing
 
 > ### ⚠ Warning
